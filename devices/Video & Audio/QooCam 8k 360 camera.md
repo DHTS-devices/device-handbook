@@ -1,5 +1,7 @@
 ### I. Device Info
 
+## webLink： https://www.kandaovr.com/support/qoocam-8k#support_detail_user_guide
+
 The Qoocam 8K is a **high-resolution 360° / VR camera** designed for recording **immersive visual environments** in research, clinical, and XR-related settings.
 
 Its primary purpose is not casual video capture, but to:
