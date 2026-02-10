@@ -311,4 +311,176 @@ Recommended:
 
 ---
 
+# Zoom H8 Home Screen Items (Detailed)
+
+---
+
+## 1. Field
+
+Field Mode is the primary multi-track recording workflow.
+
+Inside Field Mode, you can configure:
+
+- Input channels (XLR 1–4 and mic capsule)
+- Input gain (per channel)
+- Phantom power (48V, per channel)
+- Track arm / mute
+- Audio level meters and clipping indicators
+- Recording format (WAV, sample rate, bit depth)
+- Project-based file structure
+- Headphone monitoring
+
+**Recommended use:**  
+Interviews, observations, experiments, and any research data collection.
+
+---
+
+## 2. Music
+
+Music Mode is optimized for musicians and instrument practice.
+
+Inside Music Mode, you may find:
+
+- Music-oriented screen layout
+- Metronome integration
+- Instrument-focused input handling
+- Performance-oriented monitoring
+
+**Research note:**  
+This mode is generally **not used** for speech or behavioral research.
+
+---
+
+## 3. Podcast
+
+Podcast Mode provides a simplified interface for voice recording.
+
+Inside Podcast Mode, you may find:
+
+- Simplified multi-voice layout
+- Live mixing controls
+- Sound pads for effects
+- Voice-focused signal flow
+
+**Research note:**  
+Podcast Mode is **not recommended** due to reduced transparency and control.
+
+---
+
+## 4. Audio Interface
+
+Audio Interface Mode turns the Zoom H8 into a USB audio interface.
+
+Inside Audio Interface Mode, you can configure:
+
+- USB audio routing
+- Input-to-computer mapping
+- Monitoring behavior
+- Connection mode with a computer
+
+**Important:**  
+Audio is recorded by the computer, not saved to the SD card by default.
+
+---
+
+## 5. Line Out Level
+
+Line Out Level controls output volume only.
+
+Inside Line Out Level, you can adjust:
+
+- Headphone output volume
+- External speaker or camera output level
+
+**Note:**  
+Line Out Level does **not** affect recorded audio quality.
+
+---
+
+## 6. SD Card
+
+SD Card provides access to storage-related functions.
+
+Inside SD Card, you can:
+
+- View stored recordings
+- Check available storage space
+- Manage projects and files
+
+---
+
+## 7. SD Card Reader
+
+SD Card Reader allows the device to function as a USB card reader.
+
+Inside SD Card Reader mode:
+
+- The SD card appears as external storage on a computer
+- Files can be copied directly without removing the card
+
+---
+
+## 8. Tuner
+
+Tuner is a utility app for musical instrument tuning.
+
+Inside Tuner, you can:
+
+- Tune guitars or other instruments
+- Adjust reference pitch
+
+**Research note:**  
+Not relevant for speech or behavioral recording.
+
+---
+
+## 9. Guitar Lab
+
+Guitar Lab is used for managing guitar-related effects and presets.
+
+Inside Guitar Lab, you can:
+
+- Load or edit guitar effect settings
+- Manage tone presets
+
+**Research note:**  
+Not used in research workflows.
+
+---
+
+## 10. System
+
+System contains device-level settings.
+
+Inside System, you can configure:
+
+- Date and time
+- Screen brightness
+- Power behavior
+- File naming conventions
+- Device information
+
+---
+
+## 11. Bluetooth
+
+Bluetooth controls wireless-related features.
+
+Inside Bluetooth, you may find:
+
+- Wireless control options
+- Device pairing settings
+
+**Availability:**  
+Depends on hardware configuration.
+
+---
+
+## 12. Language
+
+Language controls the interface language.
+
+Inside Language, you can:
+
+- Change the display language of the device
 
