@@ -5,8 +5,6 @@
 
 ## Year (development / launch)
 - Announced at CES 2020; planned availability in **Q2 2020** :contentReference[oaicite:2]{index=2}  
-- User manual version indicates **Aug 2020** for ScanWatch documentation :contentReference[oaicite:3]{index=3}  
-✅ Practical takeaway: treat it as a **2020-generation** device.
 
 ## Current status (production)
 - **Discontinued (production stopped)**: Withings support states they **stopped producing the first ScanWatch** (and Steel HR), remaining stock may still be sold until out of stock :contentReference[oaicite:4]{index=4}
