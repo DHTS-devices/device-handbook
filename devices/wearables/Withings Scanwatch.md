@@ -7,34 +7,34 @@
 - Announced at CES 2020; planned availability in **Q2 2020** 
 
 ## Current status (production)
-- **Discontinued (production stopped)**: Withings support states they **stopped producing the first ScanWatch** (and Steel HR), remaining stock may still be sold until out of stock :contentReference[oaicite:4]{index=4}
+- **Discontinued (production stopped)**: Withings support states they **stopped producing the first ScanWatch** (and Steel HR), remaining stock may still be sold until out of stock
 
 ## Does discontinuation affect research use?
-- **Functionality**: day-to-day use is **not inherently impacted** as long as the Withings App + cloud services continue supporting it (device still has active support pages and data viewing guidance) :contentReference[oaicite:5]{index=5}
+- **Functionality**: day-to-day use is **not inherently impacted** as long as the Withings App + cloud services continue supporting it (device still has active support pages and data viewing guidance) 
 - **Practical impact**:
-  1) Replacement units become harder to buy (inventory only). :contentReference[oaicite:6]{index=6}  
+  1) Replacement units become harder to buy (inventory only). 
   2) Future clinical features/algorithms may prioritize newer models (e.g., ScanWatch 2 generation).
   3) For publications, always document the exact model as “ScanWatch (Original/1st Gen, 2020)”.
 
 ## What data can be collected?
 The Withings ecosystem supports heart-related + sleep-related metrics in the app, including:
-- **ECG (1-lead)** and atrial fibrillation detection positioning :contentReference[oaicite:7]{index=7}  
-- **SpO₂** :contentReference[oaicite:8]{index=8}  
-- **Heart rate** history (viewable in app) :contentReference[oaicite:9]{index=9}  
-- **Sleep**: duration, depth/interruptions, sleep score, etc. (app-level sleep monitoring features) :contentReference[oaicite:10]{index=10}  
+- **ECG (1-lead)** and atrial fibrillation detection positioning 
+- **SpO₂**   
+- **Heart rate** history (viewable in app) 
+- **Sleep**: duration, depth/interruptions, sleep score, etc. (app-level sleep monitoring features)
 
 > Note: Some respiratory/sleep-apnea related features can be region/clearance dependent (common for this product line).
 
 ## How is data collected / accessed?
 ### 1) Mobile App (primary)
-- Use the **Withings App** (previously “Health Mate”) to pair the watch and sync health data :contentReference[oaicite:11]{index=11}
+- Use the **Withings App** (previously “Health Mate”) to pair the watch and sync health data
 
 ### 2) Withings Cloud + Web Dashboard export (CSV)
-- You can export your account data from the **web-based Health Dashboard** as **CSV** (“Download my data”) :contentReference[oaicite:12]{index=12}  
-- You can also export data from the **iOS app** (“Export All Health Data”), which emails a CSV archive :contentReference[oaicite:13]{index=13}  
+- You can export your account data from the **web-based Health Dashboard** as **CSV** (“Download my data”)  
+- You can also export data from the **iOS app** (“Export All Health Data”), which emails a CSV archive
 
 ### 3) Developer API (Cloud access with consent)
-- Withings Public API uses **OAuth 2.0** and allows approved apps to access user-consented health data :contentReference[oaicite:14]{index=14}  
+- Withings Public API uses **OAuth 2.0** and allows approved apps to access user-consented health data
 
 **Important limitation for research**:
 - API/app exports are typically **summary-level signals**, not raw waveforms (e.g., no raw ECG/PPG stream access in most consumer APIs).
