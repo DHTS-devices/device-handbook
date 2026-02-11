@@ -4,7 +4,7 @@
 **Withings ScanWatch** — Hybrid smartwatch with **1-lead ECG** and **SpO₂** (clinically positioned).
 
 ## Year (development / launch)
-- Announced at CES 2020; planned availability in **Q2 2020** :contentReference[oaicite:2]{index=2}  
+- Announced at CES 2020; planned availability in **Q2 2020** 
 
 ## Current status (production)
 - **Discontinued (production stopped)**: Withings support states they **stopped producing the first ScanWatch** (and Steel HR), remaining stock may still be sold until out of stock :contentReference[oaicite:4]{index=4}
