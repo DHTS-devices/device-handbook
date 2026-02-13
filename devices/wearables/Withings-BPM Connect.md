@@ -120,3 +120,76 @@ The optional subscription only provides coaching features and does not affect da
 
 The device is not intended for local storage; it relies on cloud persistence.
 
+## Data Access: CSV vs API
+
+Withings data can be retrieved in two ways:
+
+- **CSV Export** (manual, good for pilot studies)
+- **Public Health Data API** (OAuth2, scalable for cohorts)
+
+---
+
+## Option A — CSV Export (manual)
+
+### Export from Mobile App
+1. Open the Withings App (Health Mate)
+2. Go to **Profile**
+3. Tap **Settings**
+4. Select **Export All Health Data**
+5. Start archive → you will receive an email with a **CSV** download link
+
+### Export from Web Dashboard
+1. Open the Withings online dashboard
+2. **Settings** → select user
+3. Click **Download my data**
+4. Download the archive (**CSV**)
+
+Notes:
+- This export is not real-time and requires manual action.
+- Suitable for small-scale / short pilot studies.
+- The archive is typically delivered as a ZIP containing CSV files.
+
+---
+
+## Option B — Withings Public API (recommended for research)
+
+### What you need
+To use the API you must implement **OAuth 2.0**:
+
+1. **Create a Withings developer/partner application**
+2. Obtain:
+   - `client_id`
+   - `client_secret`
+   - `redirect_uri` (callback URL)
+3. Use **OAuth web flow** to obtain:
+   - `access_token`
+   - `refresh_token`
+4. Call API endpoints to retrieve measurements (BP/HR are under the `measure` API).
+
+Reference:
+- API Reference (endpoints + measurement types)
+- OAuth Web Flow guide
+
+### OAuth2 Web Flow (high-level)
+1. Redirect user to Withings authorization URL (user logs in & grants access)
+2. Your redirect URI receives an authorization `code`
+3. Exchange `code` for `access_token` + `refresh_token`
+4. Use `access_token` to call endpoints
+5. Use `refresh_token` to renew the access token when needed
+
+### Measurement retrieval
+Blood pressure and heart rate can be retrieved via the **Measure endpoint** (`getmeas`).
+The API uses measurement type codes for values like:
+- Diastolic BP (mmHg)
+- Systolic BP (mmHg)
+- Heart pulse (bpm)
+
+### Near real-time updates (optional)
+Withings also supports notifications/webhooks so your system can be notified when new data is available, then you can fetch it via API.
+
+---
+
+## Practical Notes
+- **CSV** = easiest, manual, not scalable
+- **API** = best for studies, requires OAuth + token storage + refresh logic
+- The device does **not** provide continuous streaming signals; only discrete measurement records.
