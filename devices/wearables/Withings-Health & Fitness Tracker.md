@@ -71,6 +71,102 @@ Install the **Withings app (Health Mate)** on your smartphone:
 
 ---
 
+## GPS Activation
+
+ScanWatch does not continuously record GPS. GPS data is collected only during:
+
+- Manually started workouts (e.g., running, cycling)
+- Connected GPS sessions (via smartphone)
+
+GPS recording begins when a workout session starts and ends when the workout is stopped.
+
+---
+
+## GPS Data Structure
+
+GPS data is structured as a high-frequency location time series.
+
+Each record typically includes:
+
+| Timestamp | Latitude | Longitude | Altitude | Speed | Distance |
+|-----------|----------|-----------|----------|-------|----------|
+
+### Characteristics
+
+- Type: Continuous time series (event-bounded)
+- Sampling interval: ~1 second (varies by phone GPS settings)
+- Duration: Workout duration only
+- Time zone: UTC internally, displayed in local time
+
+---
+
+## GPS Temporal Properties
+
+- Start timestamp = workout start
+- End timestamp = workout stop
+- Sampling interval is usually regular but may contain:
+  - Gaps (signal obstruction)
+  - Reduced frequency (battery optimization)
+  - Drift (urban canyon effect)
+
+Distance is typically calculated cumulatively from GPS trajectory.
+
+---
+
+# Sleep Time Series Structure
+
+Sleep data differs significantly from GPS. It is not high-frequency raw signal output, but algorithm-derived stage segmentation.
+
+---
+
+## Sleep Session Detection
+
+Sleep sessions are automatically detected based on:
+
+- Reduced movement (accelerometer)
+- Heart rate variability
+- Time-of-day heuristics
+- Optional respiratory signals (model-dependent)
+
+Each sleep session includes:
+
+- Sleep start time
+- Wake time
+- Total duration
+- Sleep score
+
+---
+
+## Sleep Stage Segmentation
+
+Sleep is represented as categorical time segments:
+
+| Start Time | End Time | Stage |
+|------------|----------|-------|
+| 23:14      | 00:05    | Light |
+| 00:05      | 01:22    | Deep  |
+| 01:22      | 01:30    | Awake |
+| 01:30      | 03:05    | REM   |
+
+### Temporal Characteristics
+
+- Type: Segmented categorical time series
+- Resolution: Typically 30-second to 1-minute internal windows (not exposed raw)
+- Output: Stage intervals only (not raw accelerometer or PPG signal)
+
+---
+
+# Comparison: GPS vs Sleep Time Series
+
+| Feature | GPS | Sleep |
+|----------|------|--------|
+| Data Type | Continuous spatial | Segmented categorical |
+| Trigger | Manual workout | Automatic detection |
+| Sampling | ~1 second | Internal 30–60 sec windows |
+| Duration | Workout only | Overnight session |
+| Raw Signal Access | Location points | Not available |
+| Derived Metrics | Distance, pace | Sleep score, efficiency |
+
 ## Daily Use
 
 ### Wearing the Watch
