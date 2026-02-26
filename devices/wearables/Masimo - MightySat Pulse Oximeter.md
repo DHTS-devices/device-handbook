@@ -1,18 +1,5 @@
 # Masimo MightySat Pulse Oximeter
-
-## Category
-Clinical Device / Pulse Oximeter / Physiological Monitoring
-
----
-
-## Company Information
-
-- **Company:** Masimo Corporation
-- **Product Name:** MightySat® Fingertip Pulse Oximeter
-- **FDA Clearance:** Yes (medical device)
-- **Primary Market:** Clinical & professional use
-- **Connectivity:** Bluetooth (select models)
-
+#Link: https://www.masimo.com/products/wearables/mightysatrx/
 ---
 
 ## Overview
@@ -26,18 +13,6 @@ Masimo MightySat is a clinically validated fingertip pulse oximeter designed to 
 - Respiratory rate (derived, selected models)
 
 It uses Masimo’s proprietary Signal Extraction Technology (SET®), designed to improve signal reliability during motion and low perfusion conditions.
-
----
-
-## Key Features
-
-- Medical-grade SpO₂ measurement
-- Pulse Rate (PR)
-- Perfusion Index (PI)
-- Motion-resistant signal processing
-- Bluetooth connectivity (MightySat Rx)
-- Rechargeable battery
-- Fingertip clip form factor
 
 ---
 
@@ -86,21 +61,6 @@ App-level data may include:
 
 ---
 
-## Raw Signal Access
-
-| Data Type | Availability |
-|-----------|--------------|
-| SpO₂ summary | ✔️ |
-| Pulse Rate | ✔️ |
-| Perfusion Index | ✔️ |
-| Pleth waveform (raw PPG) | ❌ (consumer) |
-| Clinical waveform export | Possible in hospital-integrated systems |
-
-For research requiring raw waveform:
-Hospital-grade Masimo monitors are required.
-
----
-
 ## Measurement Accuracy
 
 Masimo SET technology is widely validated in:
@@ -110,33 +70,6 @@ Masimo SET technology is widely validated in:
 - Neonatal and adult monitoring
 
 Widely cited in peer-reviewed medical research.
-
----
-
-## Use Cases
-
-### 1. Clinical Research
-- Hypoxia monitoring
-- Sleep-disordered breathing studies
-- COVID-related oxygen tracking
-- COPD research
-
-### 2. Sports & Altitude Research
-- High-altitude oxygen monitoring
-- VO₂-related estimation studies
-
-### 3. Digital Health Validation Studies
-- Comparing wearable SpO₂ devices
-- Sensor validation benchmark
-
----
-
-## Not Suitable For
-
-- Continuous 24-hour passive monitoring
-- HRV analysis
-- Raw PPG machine learning modeling (consumer version)
-- Large-scale wearable behavioral studies
 
 ---
 
@@ -150,48 +83,66 @@ Widely cited in peer-reviewed medical research.
 | Raw waveform | ❌ |
 
 ---
+## Real-Time Data & Download Capability
 
-## Research Tier Classification (DHTS)
+### Is the Data Real-Time?
 
-| Tier | Suitability |
-|------|-------------|
-| Clinical Research | ⭐⭐⭐⭐ |
-| Device Validation | ⭐⭐⭐⭐ |
-| Consumer Fitness | ⭐⭐ |
-| ML Signal Processing | ⭐ (unless hospital system) |
+the device performs continuous measurement and updates values in near real-time.
 
----
+Typical refresh rate:
+- SpO₂: ~1 second updates
+- Pulse Rate: ~1 second updates
+- Perfusion Index (PI): real-time display
+- PVi (selected models): real-time display
 
-## Battery & Hardware
-
-- Rechargeable battery
-- Fingertip clip sensor
-- OLED display
-- Bluetooth (Rx model)
+However, **real-time display does not mean real-time downloadable data stream**.
 
 ---
 
-## Regulatory Status
+## Data Download Options
 
-- FDA-cleared (varies by model)
-- CE marked
-- Medical device classification
+Masimo MightySat models differ in data access capability.
 
 ---
 
-## Comparison Context
+### MightySat Rx (Bluetooth Model)
 
-Compared to consumer devices (Fitbit, Garmin):
+| Feature | Availability |
+|----------|--------------|
+| Bluetooth sync | ✔️ |
+| Mobile app integration | ✔️ |
+| Session history | ✔️ |
+| CSV export | Limited |
+| API access | ❌ |
+| Raw waveform export | ❌ |
 
-- Higher SpO₂ accuracy
-- Medical validation
-- Lower long-term wearability
-- Limited open data access
+Data can be viewed and exported via the **Masimo Professional Health App**.
+
+Exported data typically includes:
+
+| Field | Type |
+|--------|------|
+| timestamp | datetime |
+| spo2 | percentage |
+| pulse_rate | bpm |
+| perfusion_index | percentage |
+| pvi | percentage (if supported) |
+
+⚠️ Exported data is generally summary-level, not continuous per-second time series.
 
 ---
 
-## Summary
+## Raw Signal Access
 
-Masimo MightySat is a medical-grade pulse oximeter optimized for accurate oxygen saturation measurement under motion and low perfusion conditions.
+| Data Type | Consumer MightySat | Hospital Masimo Systems |
+|------------|-------------------|--------------------------|
+| SpO₂ values | ✔️ | ✔️ |
+| Pulse Rate | ✔️ | ✔️ |
+| Perfusion Index | ✔️ | ✔️ |
+| Pleth waveform (PPG) | ❌ | ✔️ |
+| Continuous streaming | ❌ | ✔️ |
+| HL7 / EMR integration | ❌ | ✔️ |
 
-It is suitable for clinical and validation research but limited in raw signal accessibility for advanced ML modeling.
+Raw pleth waveform access requires hospital-grade Masimo monitoring systems (e.g., Root platform, Rad series).
+
+---
