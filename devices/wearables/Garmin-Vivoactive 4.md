@@ -209,6 +209,7 @@ Install parser:
 
 ```bash
 pip install fitparse
+、、、
 
 ## Battery Life
 --- 
