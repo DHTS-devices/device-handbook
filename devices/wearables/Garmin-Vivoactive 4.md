@@ -211,8 +211,9 @@ Install parser:
 pip install fitparse
 、、、
 
+---
+
 ## Battery Life
---- 
 ### Battery performance depends on usage mode.
 
 | Mode | Approximate Duration |
