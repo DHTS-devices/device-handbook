@@ -137,47 +137,46 @@
 # 4. Hardware Information
 
 - Depth technology:
-  Active infrared stereo depth sensing ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:5]{index=5}
-
+  Active infrared stereo depth sensing ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) 
 - Stereo baseline:
-  95 mm ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:6]{index=6}
+  95 mm ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) 
 
 - RGB sensor:
-  Global shutter RGB camera ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:7]{index=7}
+  Global shutter RGB camera ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) 
 
 - RGB resolution:
-  Up to 1280 × 800 ([Intel Specs](https://www.intel.com/content/www/us/en/products/sku/205847/intel-realsense-depth-camera-d455/specifications.html)) :contentReference[oaicite:8]{index=8}
+  Up to 1280 × 800 ([Intel Specs](https://www.intel.com/content/www/us/en/products/sku/205847/intel-realsense-depth-camera-d455/specifications.html))
 
 - Depth resolution:
-  Up to 1280 × 720 ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:9]{index=9}
+  Up to 1280 × 720 ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/))
 
 - Maximum depth frame rate:
-  Up to 90 FPS ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:10]{index=10}
+  Up to 90 FPS ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) 
 
 - Depth field of view:
-  87° × 58° ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:11]{index=11}
+  87° × 58° ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) 
 
 - RGB field of view:
-  90° × 65° ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:12]{index=12}
+  90° × 65° ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) 
 
 - Minimum depth distance:
-  Approximately 52 cm ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:13]{index=13}
+  Approximately 52 cm ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/))
 
 - Recommended operating range:
-  Approximately 0.6 m to 6 m ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:14]{index=14}
+  Approximately 0.6 m to 6 m ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) 
 
 - IMU:
-  Bosch BMI055 IMU ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:15]{index=15}
+  Bosch BMI055 IMU ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) 
 
 - Connectivity:
-  USB-C USB 3.1 Gen 1 ([Intel Specs](https://www.intel.com/content/www/us/en/products/sku/205847/intel-realsense-depth-camera-d455/specifications.html)) :contentReference[oaicite:16]{index=16}
+  USB-C USB 3.1 Gen 1 ([Intel Specs](https://www.intel.com/content/www/us/en/products/sku/205847/intel-realsense-depth-camera-d455/specifications.html))
 
 - Dimensions:
-  124 mm × 26 mm × 29 mm ([Intel Specs](https://www.intel.com/content/www/us/en/products/sku/205847/intel-realsense-depth-camera-d455/specifications.html)) :contentReference[oaicite:17]{index=17}
+  124 mm × 26 mm × 29 mm ([Intel Specs](https://www.intel.com/content/www/us/en/products/sku/205847/intel-realsense-depth-camera-d455/specifications.html))
 
 - Mounting:
   - tripod mount
-  - M4 mounting points ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:18]{index=18}
+  - M4 mounting points ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/))
 
 - Hardware notes:
   The D455 is NOT a standalone device.
@@ -223,7 +222,7 @@
   - better outdoor performance
   - improved RGB-depth alignment
 
-  are major improvements. :contentReference[oaicite:19]{index=19}
+  are major improvements. 
 
 - Important practical note:
   Stereo depth cameras work differently from LiDAR.
@@ -432,7 +431,7 @@ Important considerations:
 - interference
 - CPU/GPU load
 
-Intel notes multi-camera support is available. :contentReference[oaicite:20]{index=20}
+Intel notes multi-camera support is available.
 
 ---
 
@@ -535,7 +534,7 @@ Recommended hardware:
   - Unity
   - ROS
 
-  according to Intel documentation. :contentReference[oaicite:21]{index=21}
+  according to Intel documentation.
 
 ---
 
@@ -679,4 +678,3 @@ Possible solutions:
   - computer vision research
   - embedded spatial AI systems
 ```
-::contentReference[oaicite:23]{index=23}
