@@ -36,7 +36,7 @@
 
   simultaneously.
 
-  The D455 belongs to Intel’s D400 series and is considered one of the longer-range and more accurate stereo depth cameras in the RealSense lineup. ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/)) :contentReference[oaicite:0]{index=0}
+  The D455 belongs to Intel’s D400 series and is considered one of the longer-range and more accurate stereo depth cameras in the RealSense lineup. ([Intel RealSense](https://www.intelrealsense.com/depth-camera-d455/))
 
   One of the major improvements of the D455 compared to earlier models like the D435 is the larger 95 mm stereo baseline between depth sensors. This significantly improves depth accuracy at longer distances. Intel states the D455 achieves depth error below 2% at 4 meters
 
