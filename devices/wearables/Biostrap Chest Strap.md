@@ -665,19 +665,6 @@ timestamps
 VERY important.
 
 ---
-
-# 11. Research Recommendations For Your Lab
-
-This device is actually useful for your work.
-
-Because your research already focuses on:
-
-```text
-HR
-HRV
-physiology
-```
-
 ---
 
 ## Biostrap + Empatica E4
