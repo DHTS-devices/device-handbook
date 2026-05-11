@@ -511,48 +511,6 @@ happy_ring_study/
 ```
 
 ---
-
-# 11. Research Recommendations For Your Lab
-
-This may actually be useful for your lab.
-
-Because your work includes:
-
-```text
-wearables
-+
-physiological monitoring
-```
-
-Possible combination:
-
-### Happy Ring + Empatica E4
-
-```text
-Happy Ring
-+
-Empatica E4
-↓
-fusion dataset
-```
-
-Result:
-
-```text
-sleep
-+
-HRV
-+
-EDA
-+
-temperature
-```
-
-Very useful for:
-- stress studies
-- physiological events
-- wellness monitoring
-
 ---
 
 ## Happy Ring + Garmin / Fitbit
@@ -574,33 +532,6 @@ Compare:
 
 ---
 
-## Hot Flash Research Possibility
-
-Potential use:
-
-```text
-Happy Ring
-↓
-overnight HRV
-↓
-symptom trend analysis
-```
-
-Interesting for:
-- nighttime physiology
-- recovery disruption
-- autonomic changes
-
-Though:
-
-```text
-E4
-```
-
-would still be stronger for:
-```text
-EDA-related events
-```
 
 ---
 
